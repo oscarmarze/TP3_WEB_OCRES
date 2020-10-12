@@ -61,8 +61,8 @@ function actualise() {
 }
 
 function getThreeDayForecast(){
-  var city = document.getElementById('city-input').value;
-  api.openweathermap.org/data/2.5/forecast/daily?q=city&cnt=3&appid=8f46a8957b88a30f1e3419bf79e9c29e;
+   city = document.getElementById('city-input').value;
+  //api.openweathermap.org/data/2.5/forecast/daily?q=city&cnt=3&appid=8f46a8957b88a30f1e3419bf79e9c29e;
 
 }
 
