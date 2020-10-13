@@ -20,7 +20,7 @@
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body onload="start()" src="js/script.js">
+  <body onload="start(),getThreeDayForecast()" src="js/script.js">
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
     >
@@ -71,12 +71,12 @@
             <h4 class="my-0 font-weight-normal">Demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="tomorrow-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="tomorrow-forecast-more-info"></p>
+              <div id="tomorrowicon-weather-container" ></div>
+              <h3 id="tomorrow-forecast-temp"> </h3>
             </div>
           </div>
         </div>
@@ -85,12 +85,12 @@
             <h4 class="my-0 font-weight-normal">Après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="tomorrow2-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="tomorrow2-forecast-more-info"></p>
+              <div id="tomorrow2icon-weather-container" ></div>
+              <h3 id="tomorrow2-forecast-temp"> </h3>
             </div>
           </div>
         </div>
@@ -99,12 +99,12 @@
             <h4 class="my-0 font-weight-normal">Encore après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="tomorrow3-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="tomorrow3-forecast-more-info"></p>
+              <div id="tomorrow3icon-weather-container" ></div>
+              <h3 id="tomorrow3-forecast-temp"> </h3>
             </div>
           </div>
         </div>
