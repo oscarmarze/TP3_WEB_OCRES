@@ -69,19 +69,23 @@ function getThreeDayForecast(){
       const data = response.data;
       for(let i=1;i<4;i++) // la boucle for de 1 à 3 permet de parcourir les jour voulu, 0 étant ajrd
       {
+        
         const main = data.list[i].weather[0].main;
         const description = data.list[i].weather[0].description;
         const temp = data.list[i].main.temp;
+        window.alert("test5");
         const icon = apiWeather.getHTMLElementFromIcon(data.list[i].weather[0].icon);
+        window.alert("test2");
         if(i==1)
         {
           document.getElementById('tomorrow-forecast-main').innerHTML = main;
           document.getElementById('tomorrow-forecast-more-info').innerHTML = description;
           document.getElementById('tomorrowicon-weather-container').innerHTML = icon;
           document.getElementById('tomorrow-forecast-temp').innerHTML = `${temp}°C`;
+          window.alert("1");
         }
 
-        if(i==2)
+        else if(i==2)
         {
           document.getElementById('tomorrow2-forecast-main').innerHTML = main;
           document.getElementById('tomorrow2-forecast-more-info').innerHTML = description;
@@ -89,7 +93,7 @@ function getThreeDayForecast(){
           document.getElementById('tomorrow2-forecast-temp').innerHTML = `${temp}°C`;
         }
 
-        if(i==3)
+        else if(i==3)
         {
           document.getElementById('tomorrow3-forecast-main').innerHTML = main;
           document.getElementById('tomorrow3-forecast-more-info').innerHTML = description;
